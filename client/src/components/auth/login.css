@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Zilla+Slab:ital,wght@0,300;1,600;1,700&display=swap');
+
+
+.login {
+    /* border: 2px solid red; */
+    margin: 10px;
+}
+
+.title {
+    /* border: 2px solid black; */
+    width: fit-content;
+    position: inherit;
+    display: block;
+    margin: 10px auto;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+}
+
+.heading {
+    /* border: 2px solid black; */
+    width: fit-content;
+    position: inherit;
+    display: block;
+    margin: 10px auto;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+}
+
+.loginForm {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 5px auto;
+    padding: 20px;
+}
+
+
+.logemail {
+    outline: none;
+    margin: 10px auto;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid blue;
+}
+
+.pass {
+    outline: none;
+    margin: 10px auto;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid blue;
+}
+
+.btn {
+    outline: none;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(177, 164, 164);
+}

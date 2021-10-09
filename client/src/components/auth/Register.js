@@ -1,3 +1,4 @@
+import './register.css';
 import axios from "axios";
 import React, { useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
@@ -32,25 +33,28 @@ function Register() {
     }
 
     return (
-        <div>
-            <h1>register a new account</h1>
-            <form onSubmit={register}>
+        <div className='register'>
+            <h1 className='heading'>Register</h1>
+            <form onSubmit={register} className='registerForm'>
                 <input required
+                    className='registeremail'
                     type="email"
                     placeholder="email"
                     onChange={(e) => setEmail(e.target.value)}
                     value={email} />
                 <input required
+                    className='registerpass'
                     type="password"
                     placeholder="password"
                     onChange={(e) => setPassword(e.target.value)}
                     value={password} />
                 <input required
+                    className='vpass'
                     type="password"
                     placeholder="verify your password"
                     onChange={(e) => setPasswordVerify(e.target.value)}
                     value={passwordVerify} />
-                <button type="submit">register</button>
+                <button className='btn' type="submit">register</button>
             </form>
         </div>
 

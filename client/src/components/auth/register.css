@@ -1,0 +1,73 @@
+.register{
+    margin: 10px;
+    /* border: 2px solid red; */
+}
+
+.title {
+    /* border: 2px solid black; */
+    width: fit-content;
+    position: inherit;
+    display: block;
+    margin: 10px auto;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+}
+
+.heading {
+    /* border: 2px solid black; */
+    width: fit-content;
+    position: inherit;
+    display: block;
+    margin: 10px auto;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+}
+
+.registerForm{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 5px auto;
+    padding: 20px;
+}
+
+.registeremail{
+    outline: none;
+    margin: 10px auto;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid blue;
+}
+
+.registerpass{
+    outline: none;
+    margin: 10px auto;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid blue;
+}
+
+.vpass{
+    outline: none;
+    margin: 10px auto;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid blue;
+}
+
+.btn{
+    outline: none;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(177, 164, 164);
+}

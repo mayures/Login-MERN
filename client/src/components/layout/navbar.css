@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+}
+.navbarmain{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background-color: gray;
+}
+
+.homeLink{
+    /* border: 2px solid blue; */
+    margin: 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.registerLink{
+    /* border: 2px solid blue; */
+    margin: 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.loginLink{
+    /* border: 2px solid blue; */
+    margin: 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.linkpart{
+    color: black;
+    text-decoration: none;
+}
+
+.linkpart:hover{
+    background-color: rgb(125, 120, 204);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
