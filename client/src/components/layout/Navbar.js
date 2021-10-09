@@ -1,3 +1,5 @@
+import './navbar.css'
+
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import LogOutBtn from "../auth/LogOutBtn";
@@ -8,18 +10,26 @@ function Navbar() {
     const { loggedIn } = useContext(AuthContext);
 
     return (
-        <div>
-            <Link to="/">Home</Link>
+        <div className="navbarmain">
+            <div className="homeLink">
+                <Link to="/" className="linkpart">Home</Link>
+            </div>
             {loggedIn === false && (
                 <>
-                    <Link to="/register">Register</Link>
-                    <Link to="/login">Log in</Link>
+                    <div className="registerLink">
+                        <Link to="/register" className="linkpart">Register</Link>
+                    </div>
+                    <div className="loginLink">
+                        <Link to="/login" className="linkpart">Log in</Link>
+                    </div>
                 </>)}
             {loggedIn === true && (
                 <>
-                    <Link to="/customer">Customers</Link>
+                    <div className="customerLink">
+                        <Link to="/customer" className="linkpart">Customers</Link>
+                    </div>
                     <LogOutBtn />
-                </> )}
+                </>)}
         </div>
     );
 }

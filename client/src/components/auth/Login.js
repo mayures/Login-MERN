@@ -1,3 +1,4 @@
+import './login.css';
 import axios from "axios";
 import React, { useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
@@ -30,20 +31,22 @@ function Login() {
     }
 
     return (
-        <div>
-            <h1>login to your account</h1>
-            <form onSubmit={login}>
+        <div className='login'>
+            <h1 className='heading'>Login</h1>
+            <form onSubmit={login} className='loginForm'>
                 <input required
+                    className='logemail'
                     type="email"
                     placeholder="email"
                     onChange={(e) => setEmail(e.target.value)}
                     value={email} />
                 <input required
+                    className='pass'
                     type="password"
                     placeholder="password"
                     onChange={(e) => setPassword(e.target.value)}
                     value={password} />
-                <button type="submit">Login</button>
+                <button className='btn' type="submit">Login</button>
             </form>
         </div>
 
